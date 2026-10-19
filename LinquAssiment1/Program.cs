@@ -22,11 +22,23 @@ namespace LinquAssiment1
 
 
             #region  Get a list of only the product names from ProductList. Print each name.
-           // var query = Source.ProductList.Select(p => p.ProductName);
+            // var query = Source.ProductList.Select(p => p.ProductName);
 
             #endregion
 
-                 foreach (var item in query)
+
+            #region  Sort all products by UnitPrice (ascending). Print each  product's name and price. 
+           // var query = Source.ProductList.OrderBy(p => p.UnitPrice)
+                    //   .Select(p => new { p.ProductName, p.UnitPrice });
+
+
+
+            #endregion
+
+
+
+
+            foreach (var item in query)
             {
                 Console.WriteLine(item);
 
